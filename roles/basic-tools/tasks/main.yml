@@ -1,0 +1,6 @@
+---
+- name: Install basic tools
+  apt:
+    name: [mc, htop, telnet, vim, tcpdump, net-tools, curl, wget]
+    state: latest
+    update_cache: yes

@@ -1,0 +1,6 @@
+---
+- name: Remove packages
+  apt:
+    name: [wolfram-engine, triggerhappy, anacron, logrotate, dphys-swapfile, xserver-common, lightdm]
+    purge: yes
+    state: absent

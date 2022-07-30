@@ -1,0 +1,9 @@
+---
+- name: Disable unwanted services
+  systemd:
+    name: "{{ item }}"
+    state: stopped
+    enabled: no
+  with_items:
+    - x11-common
+    - console-setup

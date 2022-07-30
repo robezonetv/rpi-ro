@@ -1,0 +1,6 @@
+---
+- hosts: all
+  roles:
+    #- { role: disable-ipv6 }
+    - { role: basic-tools }
+    - { role: set-ro }

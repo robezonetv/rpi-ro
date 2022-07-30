@@ -1,0 +1,5 @@
+---
+- name: Disable swap in /boot/cmdline.txt
+  copy:
+    src: boot/cmdline.txt
+    dest: /boot/cmdline.txt

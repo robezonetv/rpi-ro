@@ -1,0 +1,12 @@
+---
+- name: Install busybox-syslogd
+  apt:
+    name: busybox-syslogd
+    state: latest
+    update_cache: yes
+
+- name: Remove packages
+  apt:
+    name: [rsyslog]
+    purge: yes
+    state: absent
